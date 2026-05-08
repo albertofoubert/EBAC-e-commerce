@@ -123,6 +123,15 @@ header img {
   width: 100%;
 }
 
+.newlogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.newlogo img {
+  width: 10em;
+}
+
 footer {
   width: 100%;
   padding: 20px 50px;
