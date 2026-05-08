@@ -151,6 +151,15 @@ header {
         }
 }
 
+.moreProducts {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1.3em;
+}
+
 footer {
     @include twice (#870505, 170px);
 }

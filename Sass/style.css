@@ -123,6 +123,15 @@ header img {
   width: 100%;
 }
 
+.moreProducts {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1.3em;
+}
+
 footer {
   width: 100%;
   padding: 20px 50px;
