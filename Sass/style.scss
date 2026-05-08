@@ -43,6 +43,10 @@ body{
 
 header {
     @include twice (#333, 100px);
+
+        img {
+            width: 1.5em;
+        }
 }
 
 .banner {
