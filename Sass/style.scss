@@ -151,6 +151,17 @@ header {
         }
 }
 
+.newlogo {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+        width: 10em;
+        
+    }
+}
+
 footer {
     @include twice (#870505, 170px);
 }
