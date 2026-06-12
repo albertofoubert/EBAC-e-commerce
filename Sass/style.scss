@@ -11,24 +11,19 @@ $aliniation: center;
 }
 @mixin twice($bgColor, $imgWidth) {
     width: 100%;
-    padding: 20px 50px;
+    padding: 3.2em 50px;
     background-color: $bgColor;
     @extend %flexSpace;
     align-items: $aliniation;
 
-        i {
-            width: 40px;
-            cursor: $cursor;
-            display: inline-block;
-        }
-
-        svg {
-            width: $mainWidth;
-        }
 
         img {
             width: $imgWidth;
         }
+}
+
+@mixin scale {
+    transform: scale(1.02);
 }
 
 body{
@@ -42,35 +37,58 @@ body{
 }
 
 header {
-    @include twice (#333, 100px);
-}
 
-.banner {
-    width: $mainWidth;
-    padding: 60px 0;
-    text-align: $aliniation;
-    background-image: url(../img/banner1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    box-sizing: $box;
+    @include twice(#f0eff6, 100px);
 
-        .banner__info {
-        width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    > :nth-child(1) {
+        width: 2em;
+        cursor: $cursor;
+
+        &:hover {
+            @include scale();
+        }
+    }
+
+    .cart-container {
+        position: relative;
+        cursor: $cursor;
+
+        .cart-icon {
+            width: 2.5em;
+            display: block;
+
+            &:hover {
+                @include scale();
+            }
         }
 
-        .banner__info--title{
-        font-weight: 600;
-        font-size: 30px;
-        margin: 10px;
-        }
+        .cart-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
 
-        .banner__info--text{
-        margin:$mainMargin ;
-        font-size: 25px;
-        opacity: 0.7;
-        }
+            width: 20px;
+            height: 20px;
 
+            border-radius: 50%;
+
+            background-color: red;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
 }
 
 .products {
@@ -85,12 +103,12 @@ header {
     justify-content: $aliniation;
 
         .products__item {
-            cursor:$cursor ;
             text-align: $aliniation;
 
                 img {
                     width: 200px;
                     margin-bottom: 15px;
+                    margin-top: 5em;
                 }
 
                 .products__item--title{
@@ -103,6 +121,24 @@ header {
                     font-weight: 300;
                     font-size: 15px;
                 }
+
+                button {
+                    background-color: #333;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    border: none;
+                    padding: 1em;
+                    border-radius: 2em;
+
+                    &:hover {
+                        background-color: #238c9c;
+                    }
+
+                    &:active {
+                        transform: scale(0.98);
+                    }
+                }
         }
 }
 
@@ -113,9 +149,15 @@ header {
     box-sizing: $box;
     height: 100%;
     position: fixed;
-    right: -100%;
+    right: -500em;
     top: 100px;
     box-shadow: -19px -1px 22px -15px rgba(0, 0, 0.30);
+    transition: all 0.2s ease;
+    z-index: 2000;
+
+        &.show {
+            right: 0;
+        }
 
         h2 {
             width: $mainWidth;
@@ -133,7 +175,7 @@ header {
             padding: 15px;
 
                 .cart__item--img {
-                width: $mainWidth;
+                width: 2em;
                 }
 
                 .cart__item--price {
@@ -141,19 +183,48 @@ header {
                 }
 
                 .cart div i {
-                    width: 25px;
+                    width: 1em;
                     cursor: $cursor;
                 }
 
-                .cart .delete-icon {
-                    width: $mainWidth;
+                .delete-icon {
+                    width: 2em;
+                    cursor: $cursor;
+
+                        &:hover {
+                            @include scale();
+                        }
+                    
                 }
         }
 }
 
+.fast__menu {
+    width: 15rem;
+    background-color: #fff;
+    padding: 4em;
+    box-sizing: $box;
+    height: 100%;
+    position: fixed;
+    left: -500em;
+    top: 100px;
+    box-shadow: 19px -1px 22px -15px rgba(0, 0, 0.30);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 7em;
+    transition: all 0.2s ease;
+    z-index: 2000;
+
+        &.show {
+            left: 0;
+        }
+
+}
+
 
 footer {
-    @include twice (#870505, 170px);
+    @include twice (#f0eff6, 100px);
 }
 
 
