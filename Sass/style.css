@@ -64,6 +64,30 @@ header .cart-container .cart-badge {
   font-weight: bold;
 }
 
+.banner {
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  background-image: url(../img/banner1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  box-sizing: border-box;
+}
+.banner .banner__info {
+  width: 100%;
+}
+.banner .banner__info--title {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 10px;
+}
+.banner .banner__info--text {
+  margin: 0 auto;
+  font-size: 25px;
+  opacity: 0.7;
+}
+
 .products {
   width: 80%;
   margin: 0 auto;
