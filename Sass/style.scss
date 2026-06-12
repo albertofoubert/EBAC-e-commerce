@@ -37,6 +37,12 @@ body{
 }
 
 header {
+    @include twice (#333, 100px);
+
+        img {
+            width: 1.5em;
+        }
+}
 
     @include twice(#f0eff6, 100px);
 
@@ -251,6 +257,19 @@ header {
 
 footer {
     @include twice (#f0eff6, 100px);
+.newlogo {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+        width: 13em;
+        
+    }
+}
+
+footer {
+    @include twice (#272424, 170px);
 }
 
 
