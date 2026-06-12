@@ -8,8 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>Tienda Code</title>
     <link rel="stylesheet" href="Sass/style.css">
+    <script src="JS/functions.js" defer></script>
 </head>
 <body>
+    
+<header>
+    <img src="./img/newMenuIcon2.png" alt="menuIcon">
+
+    <img src="./img/adidasLogo.png" alt="Logo Code">
+
+    <div class="cart-container">
+        <img src="./img/newCartIcon.png" alt="cartIcon" class="cart-icon">
+
+        <span class="cart-badge">0</span>
+    </div>
+</header>
     <header>
         <i><svg viewBox="0 0 24 24" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color"><path style="fill:none;stroke:#2ca9bc;stroke-linecap:round;stroke-linejoin:round;stroke-width:2" d="M3 12h18"/><path d="M9 18h12M3 6h12" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/></svg></i>
         <img src="./img/WhatsApp Image 2026-05-07 at 7.56.39 PM.jpeg" alt="Logo Code">
@@ -27,51 +40,59 @@
         <section class="products">
 
             <article class="products__item">
-                <img src="img/Jersey.jpg" alt="Jersey code" class="products__item--img">
-                <h3 class="products__item--title">Jersey Code</h3>
+                <img src="./img/adidasPlayeraMexico.jpg" alt="Jersey code" class="products__item--img">
+                <h3 class="products__item--title">Jersey México blanca</h3>
                 <p class="products__item--price">$200</p>
+                <button class="add__cart">Añadir al carrito</button>
             </article>
 
             <article class="products__item">
-                <img src="img/Chamarra.jpg" alt="Chamarra code" class="products__item--img">
-                <h3 class="products__item--title">Chamarra Code</h3>
+                <img src="./img/adidasPlayera2.webp" alt="Chamarra code" class="products__item--img">
+                <h3 class="products__item--title">Jersey México verde</h3>
                 <p class="products__item--price">$500</p>
+                <button class="add__cart">Añadir al carrito</button>
             </article>
 
             <article class="products__item">
-                <img src="img/Tenis nike.jpg" alt="Tenis nike" class="products__item--img">
-                <h3 class="products__item--title">Tenis Code</h3>
+                <img src="./img/adidasPlayera3.webp" alt="Tenis nike" class="products__item--img">
+                <h3 class="products__item--title">Playera azul</h3>
                 <p class="products__item--price">$1000</p>
+                <button class="add__cart">Añadir al carrito</button>
             </article>
 
             <article class="products__item">
-                <img src="img/Jersey.jpg" alt="Jersey code" class="products__item--img">
-                <h3 class="products__item--title">Jersey Code</h3>
+                <img src="./img/adidasPlayera4.webp" alt="Jersey code" class="products__item--img">
+                <h3 class="products__item--title">Playera Polo</h3>
                 <p class="products__item--price">$200</p>
+                <button class="add__cart">Añadir al carrito</button>
             </article>
 
             <article class="products__item">
-                <img src="img/Chamarra.jpg" alt="Chamarra code" class="products__item--img">
-                <h3 class="products__item--title">Chamarra Code</h3>
+                <img src="./img/adidasTenis1.webp" alt="Chamarra code" class="products__item--img">
+                <h3 class="products__item--title">Tenis clásicos</h3>
                 <p class="products__item--price">$500</p>
+                <button class="add__cart">Añadir al carrito</button>
             </article>
 
             <article class="products__item">
-                <img src="img/Tenis nike.jpg" alt="Tenis nike" class="products__item--img">
-                <h3 class="products__item--title">Tenis Code</h3>
+                <img src="./img/adidasTenis2.jpg" alt="Tenis nike" class="products__item--img">
+                <h3 class="products__item--title">Tenis azules</h3>
                 <p class="products__item--price">$1000</p>
+                <button class="add__cart">Añadir al carrito</button>
             </article>
 
             <article class="products__item">
-                <img src="img/Jersey.jpg" alt="Jersey code" class="products__item--img">
-                <h3 class="products__item--title">Jersey Code</h3>
+                <img src="./img/adidasTenis3.jpg" alt="Jersey code" class="products__item--img">
+                <h3 class="products__item--title">Tenis militares</h3>
                 <p class="products__item--price">$200</p>
+                <button class="add__cart">Añadir al carrito</button>
             </article>
 
             <article class="products__item">
-                <img src="img/Chamarra.jpg" alt="Chamarra code" class="products__item--img">
-                <h3 class="products__item--title">Chamarra Code</h3>
+                <img src="./img/adidasTenis4.webp" alt="Chamarra code" class="products__item--img">
+                <h3 class="products__item--title">Tenis blancos</h3>
                 <p class="products__item--price">$500</p>
+                <button class="add__cart">Añadir al carrito</button>
             </article>
 
         </section>
@@ -80,35 +101,22 @@
 
             <h2>CARRITO</h2>
 
-            <div class="cart__item">
-                <img src="img/chamarra_adidas.jpg" alt="Chamarra Adidas" class="cart__item--img">
-                <p>Chamarra</p>
-                <p class="cart__item--price">$1,000</p>
-                <i><img src="img/icono eliminar.png" alt="Icono quitar" class="delete-icon"></i>
+            <div class="cart__products">
+
             </div>
 
-            <div class="cart__item">
-                <img src="img/chamarra_adidas.jpg" alt="Chamarra Adidas" class="cart__item--img">
-                <p>Chamarra</p>
-                <p class="cart__item--price">$1,000</p>
-                <i><img src="img/icono eliminar.png" alt="Icono quitar" class="delete-icon"></i>
-            </div>
-
-            <div class="cart__item">
-                <img src="img/chamarra_adidas.jpg" alt="Chamarra Adidas" class="cart__item--img">
-                <p>Chamarra</p>
-                <p class="cart__item--price">$1,000</p>
-                <i><img src="img/icono eliminar.png" alt="Icono quitar" class="delete-icon"></i>
-            </div>
-
-            <div class="cart__item">
-                <img src="img/chamarra_adidas.jpg" alt="Chamarra Adidas" class="cart__item--img">
-                <p>Chamarra</p>
-                <p class="cart__item--price">$1,000</p>
-                <i><img src="img/icono eliminar.png" alt="Icono quitar" class="delete-icon"></i>
-            </div>
 
         </section>
+
+        <section class="fast__menu">
+            <a href="">Home</a>
+            <a href="">Productos</a>
+            <a href="">Mis compras</a>
+            <a href="">Asistencia</a>
+            <a href="">Log in</a>
+
+        </section>
+
 
         <section class="newlogo">
             <img src="./img/adidas.webp" alt="newlogo">
@@ -118,8 +126,8 @@
     </main>
 
     <footer>
-                <i><svg viewBox="0 0 24 24" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color"><path style="fill:none;stroke:#2ca9bc;stroke-linecap:round;stroke-linejoin:round;stroke-width:2" d="M3 12h18"/><path d="M9 18h12M3 6h12" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/></svg></i>
-        <img src="img/Code PP3.jpeg" alt="Logo Code">
+        <i><svg viewBox="0 0 24 24" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color"><path style="fill:none;stroke:#2ca9bc;stroke-linecap:round;stroke-linejoin:round;stroke-width:2" d="M3 12h18"/><path d="M9 18h12M3 6h12" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/></svg></i>
+        <img src="./img/adidasLogo.png" alt="Logo Code">
         <i><svg viewBox="0 0 24 24" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color"><path d="M11 20.5h.1m5.9 0h.1" style="fill:none;stroke:#2ca9bc;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/><path d="M3 3h2.14a1 1 0 0 1 1 .85L6.62 7 8 16l11-1 2-8H6.62" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/></svg></i>
     </footer>
 </body>
